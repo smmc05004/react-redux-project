@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Home2 from './pages/Home2';
 import Board from './pages/Board';
 import ErrPage from './pages/error';
 
@@ -12,6 +11,7 @@ import { createStore } from 'redux';
 import boardReducer from './reducer/reducer';
 
 const store = createStore(boardReducer);
+console.log(store.getState());
 
 ReactDOM.render(
     <Provider store = { store }>

@@ -50,13 +50,6 @@ class BoardForm extends Component {
                     <div>
                         <input ref="_contents" type="text" placeholder='content' />
                     </div>
-                    {/* <div>
-                        <select ref="_importance" onChange={this.onSelect}>
-                            <option>낮음</option>
-                            <option>보통</option>
-                            <option>높음</option>
-                        </select>
-                    </div> */}
                     <div>
                         <button type='button' onClick={this.onSubmit}>제출</button>
                     </div>
